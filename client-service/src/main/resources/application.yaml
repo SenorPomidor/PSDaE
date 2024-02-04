@@ -1,0 +1,9 @@
+server:
+  port: 8080
+
+urls:
+  serviceOne: http://localhost:8081
+
+feign:
+  logger:
+    level: FULL

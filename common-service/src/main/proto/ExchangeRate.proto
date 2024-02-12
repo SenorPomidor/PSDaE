@@ -1,0 +1,12 @@
+syntax = "proto3";
+package ru.sbt.lessons;
+
+service RandomNumberGenerator {
+  rpc Generate (RandomNumberRequest) returns (RandomNumberResponse) {}
+}
+
+message RandomNumberRequest {}
+
+message RandomNumberResponse {
+  int64 number = 1;
+}
